@@ -79,6 +79,8 @@ If you have any new ideas, [PostCSS plugin development] is really easy.
 ### Linters
 
 * [`stylelint`] is a modular stylesheet linter.
+* [`stylefmt`] is a tool that automatically formats CSS
+  according `stylelint` rules.
 * [`doiuse`] lints CSS for browser support, using data from Can I Use.
 * [`colorguard`] helps you maintain a consistent color palette.
 
@@ -106,6 +108,7 @@ If you have any new ideas, [PostCSS plugin development] is really easy.
 [`css-modules`]:              https://github.com/css-modules/css-modules
 [`colorguard`]:               https://github.com/SlexAxton/css-colorguard
 [`stylelint`]:                https://github.com/stylelint/stylelint
+[`stylefmt`]:                 https://github.com/morishitter/stylefmt
 [`cssnano`]:                  http://cssnano.co/
 [`precss`]:                   https://github.com/jonathantneal/precss
 [`doiuse`]:                   https://github.com/anandthakker/doiuse

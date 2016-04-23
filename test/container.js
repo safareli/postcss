@@ -712,3 +712,10 @@ test('normalize() does not normalize new children with exists before', t => {
     rule.append({ prop: 'c', value: '3', raws: { before: '\n ' } });
     t.deepEqual(rule.toString(), 'a { a: 1; b: 2;\n c: 3 }');
 });
+
+test('decl.value should be forced as string', t => {
+    let rule = parse('a { a: 1; b: 2 }').first;
+    rule.append({ prop: 'c', value: 3 });
+    t.deepEqual(typeof rule.first.value, 'string');
+    t.deepEqual(typeof rule.last.value,  'string');
+});
